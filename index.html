@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Segundo Boceto</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" />
+    </head>
+        <header id="titular">
+            <div class="container">
+                <div class="row h-100">
+                    <div class="col-10 mt-auto pb-6 mx-auto text-center">
+                        <h1>Crisis Pesquera en Chile</h1>
+                        <h2 class="mb-6 mb-md-0">Sobreexplotación de recursos pesqueros</h2>
+                        <div class="nombres">HERNANDEZ, QUINTEROS Y RÍOS.</div>
+                        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et felis sed lacus ultrices lacinia. Maecenas non est eget velit auctor pulvinar vitae non sapien.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <body>
+            <div class="container mb-6 mt-3">
+             <div class="row justify-content-center">
+              <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et felis sed lacus ultrices lacinia. Maecenas non est eget velit auctor pulvinar vitae non sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus porttitor dolor lacus, sed rhoncus elit pellentesque eleifend.</p>
+               <p class="titulos">Sobreexplotación de recursos pesqueros</p>
+               <img src="img/mapa.png" style="width:100%">
+           <div class="mt-5">
+               <p class="titulos">Especies explotadas (y las sobreexplotadas)</p></div>
+                <div class="container" class="intro">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et felis sed lacus ultrices lacinia. Maecenas non est eget velit auctor pulvinar vitae non sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p></div>
+            <div class="container-fluid">
+            <div class="row justify-content-center text-center" id="ejemplares"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+        <script>
+            var datos = [
+                { nombre: "Albacora", imagen: "pez-01.png", veda: false },
+                { nombre: "Anchoveta", imagen: "pez-02.png", veda: false },
+                { nombre: "Atún aleta amarilla", imagen: "pez-03.png", veda: false },
+                { nombre: "Bacaladillo", imagen: "pez-04.png", veda: false },
+                { nombre: "Caballa", imagen: "pez-05.png", veda: false },
+                { nombre: "Congrio colorado", imagen: "pez-06.png", veda: true },
+                { nombre: "Congrio dorado", imagen: "pez-07.png", veda: false },
+                { nombre: "Congrio negro", imagen: "pez-08.png", veda: false },
+                { nombre: "Corvina", imagen: "pez-09.png", veda: false },
+                { nombre: "Jurel", imagen: "pez-10.png", veda: true }
+            ];
+            for (var x = 0; x < datos.length; x++) {
+                if (datos[x].veda == false) {
+                    $("#ejemplares").append('<div class="col-6 col-sm-4 col-md-3 mb-4"><img src="img/' + datos[x].imagen + '" class="img-fluid veda"><p>' + datos[x].nombre + "</p></div>");
+                } else {
+                    $("#ejemplares").append('<div class="col-6 col-sm-4 col-md-3 mb-4"><img src="img/' + datos[x].imagen + '" class="img-fluid"><p class="text-danger">' + datos[x].nombre + "</p></div>");
+                }
+            }
+        </script></div>
+             
+            <div class="mt-5 mb-4">
+               <p class="titulos">Cómo se reparte la sobreexplotación </p>
+               <img src="img/barcos.png" class="img-fluid">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et felis sed lacus ultrices lacinia. Maecenas non est eget velit auctor pulvinar vitae non sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+               
+               <img src="img/industriacomparativa.png" class="img-fluid">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et felis sed lacus ultrices lacinia. Maecenas non est eget velit auctor pulvinar vitae non sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+               
+               <img src="img/pecesinformativos.png" class="img-fluid">
+           </div>
+             <div class="mt-5 mb-4">
+             <p class="titulos">Los dueños de la pesca industrial</p></div>
+                                 <figure class="mx-5 mb-5 my-4">
+                        <svg x="0px" y="0px" viewBox="0 0 450 200">
+                            <g class="conglomerado">
+                                <rect x="0" y="0" width="200" height="200" fill="#C8C8C8" />
+                            </g>
+                            <g class="dt" transform="translate(250 0)">
+                                <rect x="0" y="0" width="200" height="200" fill="#999999" />
+                            </g>
+                        </svg>
+                </figure>
+                <figure class="mx-5 mb-5 my-5">
+                        <svg x="0px" y="0px" viewBox="0 0 450 200">
+                            <g class="conglomerado">
+                                <rect x="0" y="0" width="200" height="200" fill="#999999" />
+                            </g>
+                            <g class="dt" transform="translate(250 0)">
+                                <rect x="0" y="0" width="200" height="200" fill="#C8C8C8" />
+                            </g>
+                        </svg>
+                </figure>
+                  
+                  <div class="mt-5 mb-4">
+                 <p class="titulos">La ley longueira, su discusión actual</p></div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et felis sed lacus ultrices lacinia. Maecenas non est eget velit auctor pulvinar vitae non sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus porttitor dolor lacus, sed rhoncus elit pellentesque eleifend. Suspendisse elementum velit tincidunt magna venenatis pretium. Etiam accumsan vulputate egestas. Aliquam maximus interdum luctus. Duis nec magna et nulla condimentum consectetur. Vivamus fringilla placerat nulla, non volutpat quam congue eget. Fusce sit amet posuere eros. </p>
+
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+
+   <footer>
+  <div class="mt-5 mb-4"></div>
+   </footer>
+</html>

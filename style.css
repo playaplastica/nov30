@@ -1,0 +1,89 @@
+            html,
+            body {
+                min-height: 100%;
+                color: #fff;
+                background-color: #006683;
+                /*noten que color y background-color se repite en header#titular*/
+            }
+            header#titular {
+                min-height: 100vh;
+                color: #fff;
+                background-color: #006683;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position: center top;
+                background-size: 100% auto;
+                background-image: url("img/caleta-tallaS.png");
+                /* Uso una imagen cuadrada para pantallas más angosta*/
+            }
+
+            @media (min-width: 768px) {
+                header#titular {
+                    background-image: url("img/caleta-tallaL.png");
+                    /* Uso una imagen apaisada para pantallas más anchas*/
+                }
+            }
+            header#titular div.container {
+                height: 100vh; /*  Misma altura que el header */
+            }
+
+            header#titular h1 {
+                color:rgba(255,255,255,0.8); /* en caso quieran un texto blanco algo traslúcido */
+                font-family: 'Asap', sans-serif;
+                line-height: 0.8;
+            }
+
+            header#titular h2 {
+                color:rgba(255,255,255,0.6); /* en caso quieran un texto blanco un poco más traslúcido que el título de primer nivel */
+                font-family: 'Asap', sans-serif;
+            }
+
+.nombres {
+text-align: center;
+  font-family: 'Asap', sans-serif;
+  color:rgba(255,255,255,0.8);
+  font-size: 15px;
+  line-height: 2.9
+}
+
+.intro {
+font-weight: bold;
+width: 400px;
+margin: auto;
+color: #E5F8FF;
+font-family: 'Asap', sans-serif;
+}
+
+.titulos{
+font-weight: bold;
+font-size: 23px;
+text-align: center; 
+color:rgba(255,255,255,0.8);
+font-family: 'Asap', sans-serif;
+}
+
+.subtitulos{
+font-weight: lighter;
+font-size: 17px;
+text-align: center; 
+color: #E5F8FF;
+line-height: 0.2;
+font-family: 'Asap', sans-serif;
+}
+
+p {
+color: #E5F8FF;
+font-size: 15px;
+text-align: left;
+font-family: 'Asap', sans-serif;
+}
+
+            img.veda {
+                filter: grayscale(100%);
+            }
+
+.container-fluid{
+  color: #2D2D2D;
+ font-weight: bold;
+ font-family: 'Asap', sans-serif;
+}
