@@ -14,6 +14,7 @@ Explotadas:
   - Jurel 
   - Langostino Amarillo 
   - Sardina Común
+  
 Sobre explotadas: 
   - Anchoveta 
   - Congro dorado 
